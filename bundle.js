@@ -15,8 +15,8 @@ const viewer = new PhotoSphereViewer({
     // Acessos
     {
       id: 'marker1',
-      longitude: 1.03,
-      latitude: -0.24,
+      longitude: -1.09,
+      latitude: -0.21,
       html: `<span class='description'>Av. Bandeirantes</span>
              <img src='./img/pin-yellow.png' width='32'/>`,
       style: {
@@ -33,8 +33,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker2',
-      longitude: -0.06,
-      latitude: -0.48,
+      longitude: -2.92,
+      latitude: -0.38,
       html: `<span class='description'>Av. Ibirapuera</span>
              <img src='./img/pin-yellow.png' width='32'/>`,
       style: {
@@ -51,8 +51,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker3',
-      longitude: 1.71,
-      latitude: -0.36,
+      longitude: 1.92,
+      latitude: -0.58,
       html: `<span class='description'>Av. Vereador José Diniz</span>
               <img src='./img/pin-yellow.png' width='32'></img>`,
       style: {
@@ -68,9 +68,27 @@ const viewer = new PhotoSphereViewer({
       }
     },
     {
+      id: 'marker315',
+      longitude: 2.18,
+      latitude: -0.08,
+      html: `<span class='description'>Av. Santo Amaro</span>
+              <img src='./img/pin-yellow.png' width='32'></img>`,
+      style: {
+        color: 'white',
+        fontFamily: 'Roboto, sans-serif',
+        borderRadius: '5px',
+        padding: '10px',
+        textAlign: 'center'
+      },
+      className: 'acesso',
+      tooltip: {
+        content: '900m'
+      }
+    },
+    {
       id: 'marker4',
-      longitude: -1.35,
-      latitude: -0.18,
+      longitude: -3.12,
+      latitude: 0.02,
       html: `<span class='description'>Ponte Cidade Jardim</span>
              <img src='./img/pin-yellow.png' width='32'></img>`,
       style: {
@@ -82,14 +100,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'acesso',
       tooltip: {
-        content: '12 min'
+        content: '5,1km'
       }
     },
     {
       id: 'marker5',
-      longitude: -0.78,
-      latitude: -0.18,
-      html: `<span class='description'>Faria Lima X Juscelino</span>
+      longitude: -2.91,
+      latitude: 0.02,
+      html: `<span class='description'>Av. Faria Lima</span>
              <img src='./img/pin-yellow.png' width='32'></img>`,
       style: {
         color: 'white',
@@ -100,13 +118,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'acesso hide-show',
       tooltip: {
-        content: '15 min'
+        content: '6,7km'
       }
     },
     {
       id: 'marker6',
-      longitude: -0.26,
-      latitude: 0.01,
+      longitude: -2.66,
+      latitude: -0.15,
       html: `<span class='description'>Estação Eucaliptos</span>
              <img src='./img/pin-yellow.png' width='32'></img>`,
       style: {
@@ -118,13 +136,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'acesso',
       tooltip: {
-        content: '950mts'
+        content: '950m'
       }
     },
     {
       id: 'marker7',
-      longitude: 1.91,
-      latitude: 0.01,
+      longitude: 1.51,
+      latitude: -0.03,
       html: `<span class='description'>Estação Campo Belo</span>
              <img src='./img/pin-yellow.png' width='32'></img>`,
       style: {
@@ -136,13 +154,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'acesso hide-show',
       tooltip: {
-        content: '1,9Km'
+        content: '1,9km'
       }
     },
     {
       id: 'marker14',
-      longitude: 1.91,
-      latitude: 0.01,
+      longitude: -0.79,
+      latitude: 0.021,
       html: `<span class='description'>Aeroporto de Congonhas</span>
              <img src='./img/pin-yellow.png' width='32'></img>`,
       style: {
@@ -154,14 +172,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'acesso hide-show',
       tooltip: {
-        content: '1,8Km'
+        content: '1,8km'
       }
     },
     // Gastronomia
     {
       id: 'marker8',
-      longitude: 0.49,
-      latitude: -0.14,
+      longitude: 1.30,
+      latitude: -0.19,
       html: `<span class='description'>Zi Tereza</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -180,7 +198,7 @@ const viewer = new PhotoSphereViewer({
       id: 'marker9',
       longitude: 0.37,
       latitude: -0.17,
-      html: `<span class='description'>Bar do Juarez</span>
+      html: `<span class='description'>La Paella</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
         color: 'white',
@@ -196,8 +214,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker10',
-      longitude: -0.98,
-      latitude: -0.08,
+      longitude: 0.07,
+      latitude: -0.28,
       html: `<span class='description'>Bar e Restaurante Jeitinho de Minas</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -214,8 +232,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker11',
-      longitude: 1.13,
-      latitude: -0.07,
+      longitude: -0.28,
+      latitude: -0.02,
       html: `<span class='description'>Agello Cucina</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -232,9 +250,9 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker12',
-      longitude: -0.72,
-      latitude: -0.38,
-      html: `<span class='description'>La Paella</span>
+      longitude: 1.02,
+      latitude: -0.06,
+      html: `<span class='description'>Bar do Juarez</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
         color: 'white',
@@ -250,8 +268,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker121',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.35,
+      latitude: -0.06,
       html: `<span class='description'>Sensi Gastronomia</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -268,8 +286,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker122',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.29,
+      latitude: -0.01,
       html: `<span class='description'>La Cucina di Casa</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -286,8 +304,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker123',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.86,
+      latitude: -0.23,
       html: `<span class='description'>Pizzaria Leona</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -304,8 +322,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker124',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.68,
+      latitude: -0.11,
       html: `<span class='description'>Padaria Firenze</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -322,8 +340,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker125',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 1.41,
+      latitude: -0.13,
       html: `<span class='description'>Padaria Sta Marcelina</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -340,8 +358,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker126',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.53,
+      latitude: -0.21,
       html: `<span class='description'>Padaria Trigueira</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -358,8 +376,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'marker127',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.17,
+      latitude: -0.09,
       html: `<span class='description'>Padaria Alfamas</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -375,8 +393,8 @@ const viewer = new PhotoSphereViewer({
       }
     },{
       id: 'marker128',
-      longitude: -0.72,
-      latitude: -0.38,
+      longitude: 0.45,
+      latitude: -0.02,
       html: `<span class='description'>Padaria Colonial</span>
              <img src='./img/pin-purple.png' width='32'></img>`,
       style: {
@@ -394,8 +412,8 @@ const viewer = new PhotoSphereViewer({
     // Conveniência
     {
       id: 'static1',
-      longitude: -1.21,
-      latitude: -0.18,
+      longitude: -2.32,
+      latitude: -0.1,
       html: `<span class='description'>Shopping Ibirapuera</span>
              <img src='./img/pin-blue.png' width='32'/>`,
       style: {
@@ -412,9 +430,9 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static2',
-      longitude: -1.10,
-      latitude: -0.11,
-      html: `<span class='description'>Pão de Açúcar (Vieira de Moraes)</span>
+      longitude: 0.02,
+      latitude: -0.12,
+      html: `<span class='description'>Pão de Açúcar</span>
              <img src='./img/pin-blue.png' width='32'/>`,
       style: {
         color: 'white',
@@ -425,14 +443,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'conv',
       tooltip: {
-        content: '1,3 km'
+        content: '1,3km'
       }
     },
     {
       id: 'static3',
-      longitude: 1.51,
-      latitude: -0.36,
-      html: `<span class='description'>Pão de Açúcar (Maracatins)</span>
+      longitude: -2.54,
+      latitude: -0.15,
+      html: `<span class='description'>Pão de Açúcar</span>
              <img src='./img/pin-blue.png' width='32'/>`,
       style: {
         color: 'white',
@@ -443,14 +461,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'conv hide-show',
       tooltip: {
-        content: '1,6 km'
+        content: '1,6km'
       }
     },
     {
       id: 'static4',
-      longitude: 0.92,
-      latitude: -0.18,
-      html: `<span class='description'>Natural da Terra (Nhambiquaras)</span>
+      longitude: 1.71,
+      latitude: -0.08,
+      html: `<span class='description'>Natural da Terra</span>
              <img src='./img/pin-blue.png' width='32'/>`,
       style: {
         color: 'white',
@@ -466,8 +484,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static5',
-      longitude: -1.58,
-      latitude: -0.05,
+      longitude: 0.97,
+      latitude: 0.03,
       html: `<span class='description'>Mambo (Joaquim Nabuco)</span>
              <img src='./img/pin-blue.png' width='32'/>`,
       style: {
@@ -483,8 +501,8 @@ const viewer = new PhotoSphereViewer({
       }
     },{
       id: 'static35',
-      longitude: -1.58,
-      latitude: -0.05,
+      longitude: 1.82,
+      latitude: -0.10,
       html: `<span class='description'>Hortfruti Campo Belo</span>
              <img src='./img/pin-blue.png' width='32'/>`,
       style: {
@@ -496,14 +514,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'conv hide-show',
       tooltip: {
-        content: '1,2Km'
+        content: '1,2km'
       }
     },
     // Academias
     {
       id: 'static6',
-      longitude: 0.11,
-      latitude: -0.16,
+      longitude: 1.03,
+      latitude: -0.38,
       html: `<span class='description'>Tecfit Campo Belo</span>
              <img src='./img/pin-red.png' width='32'/>`,
       style: {
@@ -520,8 +538,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static71',
-      longitude: 1.41,
-      latitude: -0.06,
+      longitude: 0.93,
+      latitude: -0.36,
       html: `<span class='description'>Bio Ritmo</span>
              <img src='./img/pin-red.png' width='32'/>`,
       style: {
@@ -538,8 +556,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static72',
-      longitude: 1.41,
-      latitude: -0.06,
+      longitude: -2.78,
+      latitude: 0.05,
       html: `<span class='description'>Parque Ibirapuera</span>
              <img src='./img/pin-red.png' width='32'/>`,
       style: {
@@ -551,14 +569,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'hospital hide-show',
       tooltip: {
-        content: '3,5Km'
+        content: '3,5km'
       }
     },
     // Hospital
     {
       id: 'static81',
-      longitude: 0.67,
-      latitude: -0.07,
+      longitude: 2.78,
+      latitude: -0.08,
       html: `<span class='description'>Hospital Santa Paula</span>
              <img src='./img/pin-orange.png' width='32'/>`,
       style: {
@@ -570,13 +588,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'hospital hide-show',
       tooltip: {
-        content: '2,2Km'
+        content: '2,2km'
       }
     },
     {
       id: 'static92',
-      longitude: -0.91,
-      latitude: -0.04,
+      longitude: -2.38,
+      latitude: -0.03,
       html: `<span class='description'>Hospital Alvorada</span>
              <img src='./img/pin-orange.png' width='32'/>`,
       style: {
@@ -588,13 +606,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'hospital hide-show',
       tooltip: {
-        content: '2,5Km'
+        content: '2,5km'
       }
     },
     {
       id: 'static93',
-      longitude: -0.91,
-      latitude: -0.04,
+      longitude: 1.12,
+      latitude: -0.22,
       html: `<span class='description'>Droga Raia</span>
              <img src='./img/pin-orange.png' width='32'/>`,
       style: {
@@ -606,13 +624,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'hospital hide-show',
       tooltip: {
-        content: '450mts'
+        content: '450m'
       }
     },
     {
       id: 'static94',
-      longitude: -0.91,
-      latitude: -0.04,
+      longitude: -0.08,
+      latitude: -0.37,
       html: `<span class='description'>Drogaria São Paulo</span>
              <img src='./img/pin-orange.png' width='32'/>`,
       style: {
@@ -624,14 +642,14 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'hospital hide-show',
       tooltip: {
-        content: '300mts'
+        content: '300m'
       }
     },
     // Escolas
     {
       id: 'static10',
-      longitude: -0.47,
-      latitude: -0.05,
+      longitude: 0.78,
+      latitude: -0.11,
       html: `<span class='description'>Colégio Magno</span>
              <img src='./img/pin-green.png' width='32'/>`,
       style: {
@@ -648,8 +666,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static11',
-      longitude: -1.72,
-      latitude: -0.05,
+      longitude: 1.61,
+      latitude: -0.03,
       html: `<span class='description'>Vértice</span>
              <img src='./img/pin-green.png' width='32'/>`,
       style: {
@@ -661,13 +679,13 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'parque',
       tooltip: {
-        content: '1,3Km'
+        content: '1,3km'
       }
     },
     {
       id: 'static15',
-      longitude: -2.11,
-      latitude: -0.15,
+      longitude: -2.72,
+      latitude: -0.05,
       html: `<span class='description'>Consa</span>
              <img src='./img/pin-green.png' width='32'/>`,
       style: {
@@ -684,8 +702,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static16',
-      longitude: 0.87,
-      latitude: -0.07,
+      longitude: -2.02,
+      latitude: -0.32,
       html: `<span class='description'>Augusto Laranja</span>
              <img src='./img/pin-green.png' width='32'/>`,
       style: {
@@ -702,9 +720,9 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static17',
-      longitude: 0.87,
-      latitude: -0.07,
-      html: `<span class='description'>Mobile</span>
+      longitude: -3.01,
+      latitude: 0.02,
+      html: `<span class='description'>Móbile</span>
              <img src='./img/pin-green.png' width='32'/>`,
       style: {
         color: 'white',
@@ -720,8 +738,8 @@ const viewer = new PhotoSphereViewer({
     },
     {
       id: 'static18',
-      longitude: 0.87,
-      latitude: -0.07,
+      longitude: 1.22,
+      latitude: -0.02,
       html: `<span class='description'>Stockler</span>
              <img src='./img/pin-green.png' width='32'/>`,
       style: {
