@@ -209,7 +209,7 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'gastronomia',
       tooltip: {
-        content: '2,3km'
+        content: '800m'
       }
     },
     {
@@ -335,7 +335,7 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'gastronomia',
       tooltip: {
-        content: '1km'
+        content: '800m'
       }
     },
     {
@@ -715,7 +715,7 @@ const viewer = new PhotoSphereViewer({
       },
       className: 'parque',
       tooltip: {
-        content: '1km'
+        content: '750m'
       }
     },
     {
