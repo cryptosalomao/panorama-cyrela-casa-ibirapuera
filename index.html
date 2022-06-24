@@ -139,7 +139,7 @@
         <button class="option" id='culture'>Conveniência e Cultura</button>
         <button class="option" id='health'>Hospitais e Farmácias</button>
         <button class="option" id='school'>Escolas</button>
-        <button class="option" id='access'>Acessos</button>
+        <button class="option" id='access'>Vias e Acessos</button>
         <button class="option" id='food'>Restaurantes</button>
         <button class="option" id='market'>Supermercados</button>
         <button class="option" id='all'>Ver tudo</button>
@@ -156,216 +156,87 @@
         $('.open-menu').hide('slow');
       });
    
-      $('#acesso').click(function(e) {
-        $('.acesso').each(function (i, elem) {
+      $('#access').click(function(e) {
+        $('.access, .subway').each(function (i, elem) {
           $(elem).removeClass('hide-show');
         });
 
-        $('.gastronomia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.conv').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.academia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.hospital').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.parque').each(function (i, elem) {
+        $('.park, .culture, .health, .food, .school, .market').each(function (i, elem) {
           $(elem).addClass('hide-show');
         });
       });
 
-      $('#conv').click(function(e) {
-        $('.acesso').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.gastronomia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.conv').each(function (i, elem) {
+      $('#culture').click(function(e) {
+        $('.culture').each(function (i, elem) {
           $(elem).removeClass('hide-show');
         });
 
-        $('.academia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.hospital').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.parque').each(function (i, elem) {
+        $('.park, .access, .subway, .health, .food, .school, .market').each(function (i, elem) {
           $(elem).addClass('hide-show');
         });
       });
 
-      $('#gastronomia').click(function(e) {
-        $('.acesso').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.gastronomia').each(function (i, elem) {
+      $('#health').click(function(e) {
+        $('.health').each(function (i, elem) {
           $(elem).removeClass('hide-show');
         });
 
-        $('.conv').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.academia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.hospital').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.parque').each(function (i, elem) {
+        $('.park, .access, .subway, .culture, .food, .school, .market').each(function (i, elem) {
           $(elem).addClass('hide-show');
         });
       });
 
-      $('#academia').click(function(e) {
-        $('.acesso').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.gastronomia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.conv').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.academia').each(function (i, elem) {
+      $('#food').click(function(e) {
+        $('.food').each(function (i, elem) {
           $(elem).removeClass('hide-show');
         });
 
-        $('.hospital').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.parque').each(function (i, elem) {
+        $('.park, .access, .subway, .culture, .health, .school, .market').each(function (i, elem) {
           $(elem).addClass('hide-show');
         });
       });
 
-      $('#hospital').click(function(e) {
-        $('.acesso').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.gastronomia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.conv').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.academia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.hospital').each(function (i, elem) {
+      $('#school').click(function(e) {
+        $('.school').each(function (i, elem) {
           $(elem).removeClass('hide-show');
         });
 
-        $('.parque').each(function (i, elem) {
+        $('.park, .access, .subway, .culture, .health, .food, .market').each(function (i, elem) {
           $(elem).addClass('hide-show');
         });
       });
 
-      $('#parque').click(function(e) {
-        $('.acesso').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.gastronomia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.conv').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.academia').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.hospital').each(function (i, elem) {
-          $(elem).addClass('hide-show');
-        });
-
-        $('.parque').each(function (i, elem) {
+      $('#market').click(function(e) {
+        $('.market').each(function (i, elem) {
           $(elem).removeClass('hide-show');
+        });
+
+        $('.park, .access, .subway, .culture, .health, .food, .school').each(function (i, elem) {
+          $(elem).addClass('hide-show');
+        });
+      });
+
+      $('#park').click(function(e) {
+        $('.park').each(function (i, elem) {
+          $(elem).removeClass('hide-show');
+        });
+
+        $('.market, .access, .subway, .culture, .health, .food, .school').each(function (i, elem) {
+          $(elem).addClass('hide-show');
         });
       });
 
       $('#all').click(function(e) {
         if(!$(this).hasClass('see')) {
+          $(this).text('Ocultar tudo');
 
-          $(this).text('Ocultar tudo')
-
-          $('.acesso').each(function (i, elem) {
+          $('.park, .access, .subway, .health, .food, .school, .market, .culture').each(function (i, elem) {
             $(elem).removeClass('hide-show');
           });
-
-          $('.gastronomia').each(function (i, elem) {
-            $(elem).removeClass('hide-show');
-          });
-
-          $('.conv').each(function (i, elem) {
-            $(elem).removeClass('hide-show');
-          });
-
-          $('.academia').each(function (i, elem) {
-            $(elem).removeClass('hide-show');
-          });
-
-          $('.hospital').each(function (i, elem) {
-            $(elem).removeClass('hide-show');
-          });
-
-          $('.parque').each(function (i, elem) {
-            $(elem).removeClass('hide-show');
-          });
-
         } else {
+          $(this).text('Ver tudo');
 
-          $(this).text('Ver tudo')
-
-          $('.acesso').each(function (i, elem) {
-            $(elem).addClass('hide-show');
-          });
-
-          $('.gastronomia').each(function (i, elem) {
-            $(elem).addClass('hide-show');
-          });
-
-          $('.conv').each(function (i, elem) {
-            $(elem).addClass('hide-show');
-          });
-
-          $('.academia').each(function (i, elem) {
-            $(elem).addClass('hide-show');
-          });
-
-          $('.hospital').each(function (i, elem) {
-            $(elem).addClass('hide-show');
-          });
-
-          $('.parque').each(function (i, elem) {
+          $('.park, .access, .subway, .health, .food, .school, .market, .culture').each(function (i, elem) {
             $(elem).addClass('hide-show');
           });
         }
